@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://cards.scryfall.io; connect-src 'self' blob: data: https://api.scryfall.com; object-src 'none'; base-uri 'none'">
+<title>Spellbook Ledger · Magic card collection and deck builder</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><span class="pips"><i></i><i></i><i></i><i></i><i></i></span>Spellbook <em>Ledger</em></div>
+    <nav class="nav">
+      <button class="nav-tab" data-act="nav" data-view="collection">Collection</button>
+      <button class="nav-tab" data-act="nav" data-view="decks">Decks</button>
+      <button class="nav-tab" data-act="nav" data-view="stats">Stats</button>
+    </nav>
+    <div class="top-right">
+      <span id="hdr-enrich"></span><span id="hdr-count"></span>
+      <button class="btn sm ghost" data-act="data">Data</button>
+      <button class="btn sm" data-act="importCsv">Import CSV</button>
+      <span class="hdr-sep" aria-hidden="true"></span>
+      <button class="nav-tab edit-tab" data-act="nav" data-view="edit" title="Add, correct or remove individual cards">✎ Edit collection</button>
+      <button class="icon-btn" data-act="settings" title="Settings" aria-label="Settings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15.2a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M19.4 13.5a7.6 7.6 0 0 0 0-3l2-1.6-2-3.4-2.4 1a7.4 7.4 0 0 0-2.6-1.5L14 2.5h-4l-.4 2.5A7.4 7.4 0 0 0 7 6.5l-2.4-1-2 3.4 2 1.6a7.6 7.6 0 0 0 0 3l-2 1.6 2 3.4 2.4-1c.8.6 1.6 1.1 2.6 1.5l.4 2.5h4l.4-2.5c1-.4 1.8-.9 2.6-1.5l2.4 1 2-3.4-2-1.6Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <div id="bulk"></div>
+  <div id="drawer"></div>
+  <div id="modal"></div>
+  <div id="toast"></div>
+  <div id="pop" role="dialog" aria-label="Choose a copy"></div>
+  <datalist id="taglist"></datalist>
+  <input type="file" id="fileCsv" accept=".csv,text/csv" hidden>
+  <input type="file" id="fileJson" accept=".json,application/json" hidden>
+
+  <script src="data.js"></script>
+  <script src="views.js"></script>
+  <script src="decks.js"></script>
+  <script src="app.js"></script>
+  <script src="edit.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "spellbook-ledger",
+  "productName": "Spellbook Ledger",
+  "version": "1.0.0",
+  "description": "Magic: The Gathering collection manager and Commander deck builder",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "package-win": "electron-packager . \"Spellbook Ledger\" --platform=win32 --arch=x64 --out=dist --overwrite --ignore=^/dist --ignore=README.md --ignore=.gitignore",
+    "package-mac": "electron-packager . \"Spellbook Ledger\" --platform=darwin --arch=arm64,x64 --out=dist --overwrite --ignore=^/dist --ignore=README.md --ignore=.gitignore"
+  },
+  "devDependencies": {
+    "@electron/packager": "^20.3.0",
+    "electron": "^45.5.0"
+  }
+}
