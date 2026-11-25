@@ -27,8 +27,7 @@ with format rules checked for you.
 - [Building the desktop app](#building-the-desktop-app)
 - [Project structure](#project-structure)
 - [Credits and legal](#credits-and-legal)
-- [License](#license)
-
+- 
 ## Features
 
 **Collection**
@@ -219,8 +218,4 @@ Bug reports and ideas are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
 - Spellbook Ledger is unofficial Fan Content permitted under the [Wizards of the Coast Fan Content Policy](https://company.wizards.com/en/legal/fancontentpolicy). It is not approved or endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.
 - Magic: The Gathering, card names, mana symbols and card art are trademarks and copyrights of Wizards of the Coast LLC and their respective artists.
 - Not affiliated with ManaBox. "ManaBox" refers only to the CSV format the importer reads.
-
-## License
-
-The source code is released under the [MIT License](LICENSE). The license covers this project's code only, not Magic: The Gathering card data, names or artwork.
 
